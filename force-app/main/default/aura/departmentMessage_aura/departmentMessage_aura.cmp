@@ -1,0 +1,12 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+	<aura:attribute name="messageId" type="String" />
+
+    <lightning:recordViewForm recordId="{! v.messageId}" objectApiName="DepartmentMessage__c">
+        <div class="slds-box slds-theme_default">
+            <lightning:outputField fieldName="Name" variant="label-hidden"/>
+            <div class="slds-box slds-theme_shade">
+                <lightning:outputField fieldName="Message__c" variant="label-hidden"/>
+            </div>
+        </div>
+    </lightning:recordViewForm>
+</aura:component>
